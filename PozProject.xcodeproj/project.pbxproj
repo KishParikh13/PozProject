@@ -15,9 +15,11 @@
 		DE5F0FBB25C9F06E003F7AA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5F0FB925C9F06E003F7AA8 /* LaunchScreen.storyboard */; };
 		DE5F0FC625C9F06F003F7AA8 /* PozProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F0FC525C9F06F003F7AA8 /* PozProjectTests.swift */; };
 		DE5F0FD125C9F06F003F7AA8 /* PozProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F0FD025C9F06F003F7AA8 /* PozProjectUITests.swift */; };
-		DE5F0FE225C9F0BA003F7AA8 /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F0FE125C9F0BA003F7AA8 /* LoadingScreen.swift */; };
+		DE5F0FE225C9F0BA003F7AA8 /* OnboardOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F0FE125C9F0BA003F7AA8 /* OnboardOne.swift */; };
 		DE5F0FEA25C9F0F4003F7AA8 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE5F0FE925C9F0F4003F7AA8 /* Poppins-Regular.ttf */; };
 		DE5F0FEF25C9F0FF003F7AA8 /* Blueberry Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE5F0FEE25C9F0FF003F7AA8 /* Blueberry Regular.otf */; };
+		DE5F100225CC9BB5003F7AA8 /* OnboardTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F100125CC9BB5003F7AA8 /* OnboardTwo.swift */; };
+		DE5F100725CC9CC2003F7AA8 /* OnboardThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F100625CC9CC2003F7AA8 /* OnboardThree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,9 +54,11 @@
 		DE5F0FCC25C9F06F003F7AA8 /* PozProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PozProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5F0FD025C9F06F003F7AA8 /* PozProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PozProjectUITests.swift; sourceTree = "<group>"; };
 		DE5F0FD225C9F06F003F7AA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE5F0FE125C9F0BA003F7AA8 /* LoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
+		DE5F0FE125C9F0BA003F7AA8 /* OnboardOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardOne.swift; sourceTree = "<group>"; };
 		DE5F0FE925C9F0F4003F7AA8 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		DE5F0FEE25C9F0FF003F7AA8 /* Blueberry Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blueberry Regular.otf"; sourceTree = "<group>"; };
+		DE5F100125CC9BB5003F7AA8 /* OnboardTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardTwo.swift; sourceTree = "<group>"; };
+		DE5F100625CC9CC2003F7AA8 /* OnboardThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardThree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +112,9 @@
 				DE5F0FAE25C9F06B003F7AA8 /* AppDelegate.swift */,
 				DE5F0FB025C9F06B003F7AA8 /* SceneDelegate.swift */,
 				DE5F0FB225C9F06B003F7AA8 /* ContentView.swift */,
-				DE5F0FE125C9F0BA003F7AA8 /* LoadingScreen.swift */,
+				DE5F0FE125C9F0BA003F7AA8 /* OnboardOne.swift */,
+				DE5F100125CC9BB5003F7AA8 /* OnboardTwo.swift */,
+				DE5F100625CC9CC2003F7AA8 /* OnboardThree.swift */,
 				DE5F0FB425C9F06E003F7AA8 /* Assets.xcassets */,
 				DE5F0FB925C9F06E003F7AA8 /* LaunchScreen.storyboard */,
 				DE5F0FBC25C9F06E003F7AA8 /* Info.plist */,
@@ -277,9 +283,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE5F100225CC9BB5003F7AA8 /* OnboardTwo.swift in Sources */,
 				DE5F0FAF25C9F06B003F7AA8 /* AppDelegate.swift in Sources */,
 				DE5F0FB125C9F06B003F7AA8 /* SceneDelegate.swift in Sources */,
-				DE5F0FE225C9F0BA003F7AA8 /* LoadingScreen.swift in Sources */,
+				DE5F0FE225C9F0BA003F7AA8 /* OnboardOne.swift in Sources */,
+				DE5F100725CC9CC2003F7AA8 /* OnboardThree.swift in Sources */,
 				DE5F0FB325C9F06B003F7AA8 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

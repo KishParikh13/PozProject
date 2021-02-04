@@ -1,5 +1,5 @@
 //
-//  LoadingScreen.swift
+//  OnboardOne.swift
 //  PozProject
 //
 //  Created by Kish Parikh on 2/2/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LoadingScreen: View {
+struct OnboardOne: View {
     var body: some View {
         //OnboardOne
         VStack {
@@ -17,12 +17,6 @@ struct LoadingScreen: View {
             
             //welcome text
             Welcome_Text()
-            
-            //images
-//            Images()
-//            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            
-            
             
             //nav indicators
             NavIndicators()
@@ -36,20 +30,14 @@ struct LoadingScreen: View {
     }
 }
 
-struct HomeScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        LoadingScreen()
-    }
-}
-
 struct NextButton: View {
     var body: some View {
         HStack() {
             Spacer()
             // Button(action: UIAction) {
-            Text("Next")
+            Text("Skip")
                 .font(Font.custom("Poppins-Regular", size: 14))
-                .frame(width: 80, height: 30)
+                .frame(width: 65, height: 30)
                 .background(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                 .cornerRadius(50)
             // }
@@ -75,20 +63,7 @@ struct Welcome_Text: View {
     }
 }
 
-//struct Images: View {
-//    var body: some View {
-//        ZStack {
-//            Image("1295862-200")
-//                .frame(width: 200, height: 200)
-//            Image("583034-201").resizable()
-//                .frame(width: 50, height: 50)
-//                .offset(x: -100, y: -180)
-//            Image("2508765-202").resizable()
-//                .frame(width: 60, height: 60)
-//                .offset(x: 100, y: 180)
-//        }
-//    }
-//}
+
 
 
 
