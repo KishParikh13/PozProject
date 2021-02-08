@@ -9,7 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        OnboardTwo()
+        ZStack {
+         //     OnboardOne()
+         //     OnboardTwo()
+         //     OnboardThree()
+        }
     }
 }
 
