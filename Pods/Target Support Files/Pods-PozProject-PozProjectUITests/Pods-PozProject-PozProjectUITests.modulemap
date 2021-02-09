@@ -1,0 +1,6 @@
+framework module Pods_PozProject_PozProjectUITests {
+  umbrella header "Pods-PozProject-PozProjectUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

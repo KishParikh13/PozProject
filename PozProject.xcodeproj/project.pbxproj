@@ -15,11 +15,13 @@
 		DE5F0FBB25C9F06E003F7AA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5F0FB925C9F06E003F7AA8 /* LaunchScreen.storyboard */; };
 		DE5F0FC625C9F06F003F7AA8 /* PozProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F0FC525C9F06F003F7AA8 /* PozProjectTests.swift */; };
 		DE5F0FD125C9F06F003F7AA8 /* PozProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F0FD025C9F06F003F7AA8 /* PozProjectUITests.swift */; };
-		DE5F0FE225C9F0BA003F7AA8 /* OnboardOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F0FE125C9F0BA003F7AA8 /* OnboardOne.swift */; };
+		DE5F0FE225C9F0BA003F7AA8 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F0FE125C9F0BA003F7AA8 /* Home.swift */; };
 		DE5F0FEA25C9F0F4003F7AA8 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE5F0FE925C9F0F4003F7AA8 /* Poppins-Regular.ttf */; };
 		DE5F0FEF25C9F0FF003F7AA8 /* Blueberry Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE5F0FEE25C9F0FF003F7AA8 /* Blueberry Regular.otf */; };
-		DE5F100225CC9BB5003F7AA8 /* OnboardTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F100125CC9BB5003F7AA8 /* OnboardTwo.swift */; };
-		DE5F100725CC9CC2003F7AA8 /* OnboardThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F100625CC9CC2003F7AA8 /* OnboardThree.swift */; };
+		DE5F100225CC9BB5003F7AA8 /* EnterName.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F100125CC9BB5003F7AA8 /* EnterName.swift */; };
+		DE5F100725CC9CC2003F7AA8 /* RateMood.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F100625CC9CC2003F7AA8 /* RateMood.swift */; };
+		DEDB5DBC25D32C53009F5B0D /* EnterThoughts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDB5DBB25D32C53009F5B0D /* EnterThoughts.swift */; };
+		DEDB5DC125D32D9D009F5B0D /* MessageToSelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDB5DC025D32D9D009F5B0D /* MessageToSelf.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1174F1C6E7ECE48F534F133B /* Pods-PozProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PozProject.release.xcconfig"; path = "Target Support Files/Pods-PozProject/Pods-PozProject.release.xcconfig"; sourceTree = "<group>"; };
+		900F03E5703CEB80063176FB /* Pods-PozProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PozProject.debug.xcconfig"; path = "Target Support Files/Pods-PozProject/Pods-PozProject.debug.xcconfig"; sourceTree = "<group>"; };
+		95A01B588EB9945984D7B7D6 /* Pods-PozProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PozProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-PozProjectTests/Pods-PozProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9F8079238718AF478F094CEB /* Pods-PozProject-PozProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PozProject-PozProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-PozProject-PozProjectUITests/Pods-PozProject-PozProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A31D30EBEF0BD0031A4B402F /* Pods-PozProject-PozProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PozProject-PozProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-PozProject-PozProjectUITests/Pods-PozProject-PozProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AD3624DEDDA99DCD2C283AAB /* Pods-PozProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PozProjectTests.release.xcconfig"; path = "Target Support Files/Pods-PozProjectTests/Pods-PozProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		DE5F0FAB25C9F06B003F7AA8 /* PozProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PozProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5F0FAE25C9F06B003F7AA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE5F0FB025C9F06B003F7AA8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,11 +62,13 @@
 		DE5F0FCC25C9F06F003F7AA8 /* PozProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PozProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5F0FD025C9F06F003F7AA8 /* PozProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PozProjectUITests.swift; sourceTree = "<group>"; };
 		DE5F0FD225C9F06F003F7AA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE5F0FE125C9F0BA003F7AA8 /* OnboardOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardOne.swift; sourceTree = "<group>"; };
+		DE5F0FE125C9F0BA003F7AA8 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		DE5F0FE925C9F0F4003F7AA8 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		DE5F0FEE25C9F0FF003F7AA8 /* Blueberry Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blueberry Regular.otf"; sourceTree = "<group>"; };
-		DE5F100125CC9BB5003F7AA8 /* OnboardTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardTwo.swift; sourceTree = "<group>"; };
-		DE5F100625CC9CC2003F7AA8 /* OnboardThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardThree.swift; sourceTree = "<group>"; };
+		DE5F100125CC9BB5003F7AA8 /* EnterName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterName.swift; sourceTree = "<group>"; };
+		DE5F100625CC9CC2003F7AA8 /* RateMood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateMood.swift; sourceTree = "<group>"; };
+		DEDB5DBB25D32C53009F5B0D /* EnterThoughts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterThoughts.swift; sourceTree = "<group>"; };
+		DEDB5DC025D32D9D009F5B0D /* MessageToSelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageToSelf.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +96,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8367E9284B745645A417A6EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				900F03E5703CEB80063176FB /* Pods-PozProject.debug.xcconfig */,
+				1174F1C6E7ECE48F534F133B /* Pods-PozProject.release.xcconfig */,
+				9F8079238718AF478F094CEB /* Pods-PozProject-PozProjectUITests.debug.xcconfig */,
+				A31D30EBEF0BD0031A4B402F /* Pods-PozProject-PozProjectUITests.release.xcconfig */,
+				95A01B588EB9945984D7B7D6 /* Pods-PozProjectTests.debug.xcconfig */,
+				AD3624DEDDA99DCD2C283AAB /* Pods-PozProjectTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DE5F0FA225C9F06B003F7AA8 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +116,7 @@
 				DE5F0FC425C9F06F003F7AA8 /* PozProjectTests */,
 				DE5F0FCF25C9F06F003F7AA8 /* PozProjectUITests */,
 				DE5F0FAC25C9F06B003F7AA8 /* Products */,
+				8367E9284B745645A417A6EC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,9 +136,11 @@
 				DE5F0FAE25C9F06B003F7AA8 /* AppDelegate.swift */,
 				DE5F0FB025C9F06B003F7AA8 /* SceneDelegate.swift */,
 				DE5F0FB225C9F06B003F7AA8 /* ContentView.swift */,
-				DE5F0FE125C9F0BA003F7AA8 /* OnboardOne.swift */,
-				DE5F100125CC9BB5003F7AA8 /* OnboardTwo.swift */,
-				DE5F100625CC9CC2003F7AA8 /* OnboardThree.swift */,
+				DE5F0FE125C9F0BA003F7AA8 /* Home.swift */,
+				DE5F100125CC9BB5003F7AA8 /* EnterName.swift */,
+				DE5F100625CC9CC2003F7AA8 /* RateMood.swift */,
+				DEDB5DBB25D32C53009F5B0D /* EnterThoughts.swift */,
+				DEDB5DC025D32D9D009F5B0D /* MessageToSelf.swift */,
 				DE5F0FB425C9F06E003F7AA8 /* Assets.xcassets */,
 				DE5F0FB925C9F06E003F7AA8 /* LaunchScreen.storyboard */,
 				DE5F0FBC25C9F06E003F7AA8 /* Info.plist */,
@@ -158,6 +184,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE5F0FD525C9F06F003F7AA8 /* Build configuration list for PBXNativeTarget "PozProject" */;
 			buildPhases = (
+				1CB753EB76CE88BB67FC25AD /* [CP] Check Pods Manifest.lock */,
 				DE5F0FA725C9F06B003F7AA8 /* Sources */,
 				DE5F0FA825C9F06B003F7AA8 /* Frameworks */,
 				DE5F0FA925C9F06B003F7AA8 /* Resources */,
@@ -175,6 +202,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE5F0FD825C9F06F003F7AA8 /* Build configuration list for PBXNativeTarget "PozProjectTests" */;
 			buildPhases = (
+				5731A991F7B6558274FC4740 /* [CP] Check Pods Manifest.lock */,
 				DE5F0FBD25C9F06F003F7AA8 /* Sources */,
 				DE5F0FBE25C9F06F003F7AA8 /* Frameworks */,
 				DE5F0FBF25C9F06F003F7AA8 /* Resources */,
@@ -193,6 +221,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE5F0FDB25C9F06F003F7AA8 /* Build configuration list for PBXNativeTarget "PozProjectUITests" */;
 			buildPhases = (
+				41EE312ADE17516A01477D9E /* [CP] Check Pods Manifest.lock */,
 				DE5F0FC825C9F06F003F7AA8 /* Sources */,
 				DE5F0FC925C9F06F003F7AA8 /* Frameworks */,
 				DE5F0FCA25C9F06F003F7AA8 /* Resources */,
@@ -278,16 +307,87 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1CB753EB76CE88BB67FC25AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PozProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41EE312ADE17516A01477D9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PozProject-PozProjectUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5731A991F7B6558274FC4740 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PozProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DE5F0FA725C9F06B003F7AA8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE5F100225CC9BB5003F7AA8 /* OnboardTwo.swift in Sources */,
+				DEDB5DC125D32D9D009F5B0D /* MessageToSelf.swift in Sources */,
+				DE5F100225CC9BB5003F7AA8 /* EnterName.swift in Sources */,
 				DE5F0FAF25C9F06B003F7AA8 /* AppDelegate.swift in Sources */,
 				DE5F0FB125C9F06B003F7AA8 /* SceneDelegate.swift in Sources */,
-				DE5F0FE225C9F0BA003F7AA8 /* OnboardOne.swift in Sources */,
-				DE5F100725CC9CC2003F7AA8 /* OnboardThree.swift in Sources */,
+				DEDB5DBC25D32C53009F5B0D /* EnterThoughts.swift in Sources */,
+				DE5F0FE225C9F0BA003F7AA8 /* Home.swift in Sources */,
+				DE5F100725CC9CC2003F7AA8 /* RateMood.swift in Sources */,
 				DE5F0FB325C9F06B003F7AA8 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,6 +553,7 @@
 		};
 		DE5F0FD625C9F06F003F7AA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 900F03E5703CEB80063176FB /* Pods-PozProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -473,6 +574,7 @@
 		};
 		DE5F0FD725C9F06F003F7AA8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1174F1C6E7ECE48F534F133B /* Pods-PozProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -493,6 +595,7 @@
 		};
 		DE5F0FD925C9F06F003F7AA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95A01B588EB9945984D7B7D6 /* Pods-PozProjectTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -514,6 +617,7 @@
 		};
 		DE5F0FDA25C9F06F003F7AA8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD3624DEDDA99DCD2C283AAB /* Pods-PozProjectTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -535,6 +639,7 @@
 		};
 		DE5F0FDC25C9F06F003F7AA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F8079238718AF478F094CEB /* Pods-PozProject-PozProjectUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -554,6 +659,7 @@
 		};
 		DE5F0FDD25C9F06F003F7AA8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A31D30EBEF0BD0031A4B402F /* Pods-PozProject-PozProjectUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
