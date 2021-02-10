@@ -30,7 +30,7 @@ struct MessageToSelf: View {
                 .padding(.horizontal, 40)
                 .padding(.bottom, 100)
                 .font(Font.custom("Poppins-Regular", size: 16))
-                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                .frame(maxWidth: .infinity/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity)
                 .multilineTextAlignment(.center)
             
             Button(action: {self.showingAlert2 = true}) {

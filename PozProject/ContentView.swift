@@ -11,11 +11,13 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             
-        //     Home()
+         //     Home()
          //     EnterName()
+         //     BreatheOne()
          //     RateMood()
          //     EnterThoughts()
          //     MessageToSelf()
+         
         }
     }
 }
