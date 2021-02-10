@@ -8,26 +8,47 @@
 import SwiftUI
 
 struct MessageToSelf: View {
-
-//    enum Flavor: String, CaseIterable, Identifiable {
-//        case chocolate
-//        case vanilla
-//        case strawberry
-//
-//        var id: String { self.rawValue }
-//    }
-//    
-//    @State private var selectedFlavor = Flavor.chocolate
+    
+    @State public var message: String = ""
+    
+    @State private var showingAlert2 = false
+    
+    
     var body: some View {
         //OnboardTwo
+        
         VStack {
             
             //welcome text
             MessageToSelf_Text()
             
-            //next button
-           // NextButton()
             
+            TextField( "What would you like to say?", text: $message)
+                .autocapitalization(.none)
+                .disableAutocorrection(true)
+                .border(Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                .padding(.horizontal, 40)
+                .padding(.bottom, 100)
+                .font(Font.custom("Poppins-Regular", size: 16))
+                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                .multilineTextAlignment(.center)
+            
+            Button(action: {self.showingAlert2 = true}) {
+                        Text("Next")
+                            .font(Font.custom("Poppins-Regular", size: 20))
+                            .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
+            }
+            .frame(width: 200, height: 50)
+            .background(Color(#colorLiteral(red: 0.9853331447, green: 0.7925021052, blue: 0.3908675313, alpha: 1)))
+            .cornerRadius(50)
+            .padding(.horizontal, 20)
+            .padding(.bottom, 60)
+            
+            .alert(isPresented:$showingAlert2) {
+                Alert(title: Text("Are you sure you want to delete this?"), message: Text("There is no undo"), primaryButton: .destructive(Text("Delete")) {
+                        print("Deleting...")
+                }, secondaryButton: .cancel())
+            }
             
         }
         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
@@ -36,6 +57,13 @@ struct MessageToSelf: View {
         .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
     }
 }
+
+struct MessageToSelf_Previews: PreviewProvider {
+    static var previews: some View {
+        MessageToSelf()
+    }
+}
+
 
 struct MessageToSelf_Text: View {
     var body: some View {
