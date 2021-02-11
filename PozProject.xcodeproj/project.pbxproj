@@ -28,6 +28,9 @@
 		DEDB5DD625D3BC88009F5B0D /* breathe.json in Resources */ = {isa = PBXBuildFile; fileRef = DEDB5DD525D3BC87009F5B0D /* breathe.json */; };
 		DEDB5DD725D3BC88009F5B0D /* breathe.json in Resources */ = {isa = PBXBuildFile; fileRef = DEDB5DD525D3BC87009F5B0D /* breathe.json */; };
 		DEDB5DD825D3BC88009F5B0D /* breathe.json in Resources */ = {isa = PBXBuildFile; fileRef = DEDB5DD525D3BC87009F5B0D /* breathe.json */; };
+		DEDB5DE025D4BBB9009F5B0D /* breatheTwo.json in Resources */ = {isa = PBXBuildFile; fileRef = DEDB5DDF25D4BBB9009F5B0D /* breatheTwo.json */; };
+		DEDB5DE125D4BBB9009F5B0D /* breatheTwo.json in Resources */ = {isa = PBXBuildFile; fileRef = DEDB5DDF25D4BBB9009F5B0D /* breatheTwo.json */; };
+		DEDB5DE225D4BBB9009F5B0D /* breatheTwo.json in Resources */ = {isa = PBXBuildFile; fileRef = DEDB5DDF25D4BBB9009F5B0D /* breatheTwo.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,7 @@
 		DEDB5DC525D3B2C6009F5B0D /* BreatheOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreatheOne.swift; sourceTree = "<group>"; };
 		DEDB5DCA25D3B4B4009F5B0D /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		DEDB5DD525D3BC87009F5B0D /* breathe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = breathe.json; sourceTree = "<group>"; };
+		DEDB5DDF25D4BBB9009F5B0D /* breatheTwo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = breatheTwo.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				DEDB5DD525D3BC87009F5B0D /* breathe.json */,
+				DEDB5DDF25D4BBB9009F5B0D /* breatheTwo.json */,
 				DE5F0FAE25C9F06B003F7AA8 /* AppDelegate.swift */,
 				DE5F0FB025C9F06B003F7AA8 /* SceneDelegate.swift */,
 				DE5F0FB225C9F06B003F7AA8 /* ContentView.swift */,
@@ -303,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE5F0FBB25C9F06E003F7AA8 /* LaunchScreen.storyboard in Resources */,
+				DEDB5DE025D4BBB9009F5B0D /* breatheTwo.json in Resources */,
 				DE5F0FB825C9F06E003F7AA8 /* Preview Assets.xcassets in Resources */,
 				DE5F0FB525C9F06E003F7AA8 /* Assets.xcassets in Resources */,
 				DEDB5DD625D3BC88009F5B0D /* breathe.json in Resources */,
@@ -316,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEDB5DD725D3BC88009F5B0D /* breathe.json in Resources */,
+				DEDB5DE125D4BBB9009F5B0D /* breatheTwo.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEDB5DD825D3BC88009F5B0D /* breathe.json in Resources */,
+				DEDB5DE225D4BBB9009F5B0D /* breatheTwo.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

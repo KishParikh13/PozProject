@@ -10,14 +10,19 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
+            NavigationView {
             
-         //     Home()
-         //     EnterName()
-         //     BreatheOne()
-         //     RateMood()
-         //     EnterThoughts()
-         //     MessageToSelf()
-         
+                  Home()
+             //     EnterName()
+             //     BreatheOne()
+             //     RateMood()
+             //     EnterThoughts()
+             //     MessageToSelf()
+            }
+            
+    // add some kind of message/prescription at the end of the flow
+    // face scan  emotion
+            
         }
     }
 }
