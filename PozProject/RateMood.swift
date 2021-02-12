@@ -88,7 +88,6 @@ struct RateMood: View {
                 .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .global)
                     .onChanged { value in
                         let verticalAmount = value.translation.height as CGFloat
-                        
                             speed -= (Double(verticalAmount))/100
                     })
 
