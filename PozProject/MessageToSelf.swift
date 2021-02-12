@@ -15,10 +15,10 @@ struct MessageToSelf: View {
         
         VStack {
             
-            //welcome text
+            //heading text
             MessageToSelf_Text()
             
-            
+            //text field to be replaced with record button
             TextField( "What would you like to say?", text: $message)
                 .autocapitalization(.none)
                 .disableAutocorrection(true)
@@ -29,6 +29,7 @@ struct MessageToSelf: View {
                 .frame(maxWidth: .infinity/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity)
                 .multilineTextAlignment(.center)
             
+            // nav button to next screen
             NavigationLink(destination: Home()) {
                 Text("Home")
                     .font(Font.custom("Poppins-Regular", size: 20))
@@ -53,7 +54,7 @@ struct MessageToSelf_Previews: PreviewProvider {
     }
 }
 
-
+// heading text
 struct MessageToSelf_Text: View {
     var body: some View {
         Spacer()

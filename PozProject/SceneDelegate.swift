@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  PozProject
-//
-//  Created by Kish Parikh on 2/2/21.
-//
-
 import UIKit
 import SwiftUI
 

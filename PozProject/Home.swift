@@ -1,10 +1,3 @@
-//
-//  OnboardOne.swift
-//  PozProject
-//
-//  Created by Kish Parikh on 2/2/21.
-//
-
 import SwiftUI
 
 struct Home: View {
@@ -12,15 +5,16 @@ struct Home: View {
         //OnboardOne
         VStack {
 
-            //welcome text
+            //heading text
             Welcome_Text()
             
             
-            //images
+            // big image
             Images()
             .padding(.top, -60)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             
+            // nav button to next screen
             NavigationLink(destination: EnterName()) {
                 Text("Get Started")
                     .font(Font.custom("Poppins-Regular", size: 20))
@@ -32,6 +26,12 @@ struct Home: View {
                     .padding(.bottom, 60)
             }
             
+            //testing bottom navigation
+//            .tabItem {
+//                    Image(systemName: "phone.fill")
+//                    Text("First Tab")
+//                  }
+            
         }
         .navigationBarBackButtonHidden(true)
         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
@@ -41,6 +41,7 @@ struct Home: View {
     }
 }
 
+// home screen text
 struct Welcome_Text: View {
     var body: some View {
     //    Spacer()
@@ -56,6 +57,7 @@ struct Welcome_Text: View {
     }
 }
 
+//home screen image
 struct Images: View {
     var body: some View {
         ZStack {

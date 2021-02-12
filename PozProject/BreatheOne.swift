@@ -1,19 +1,14 @@
-//
-//  BreatheOne.swift
-//  PozProject
-//
-//  Created by Kish Parikh on 2/9/21.
-//
-
 import SwiftUI
 
 struct BreatheOne: View {
     var body: some View {
         VStack {
+            
+            //load breathe animation
             LottieView()
             .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-            //.frame(width: 400, height: 400)
             
+            // nav button to next screen
             NavigationLink(destination: RateMood()) {
                 Text("Next")
                     .font(Font.custom("Poppins-Regular", size: 20))
@@ -24,6 +19,7 @@ struct BreatheOne: View {
                     .padding(.horizontal, 20)
                     .padding(.bottom, 60)
             }
+            
         }
         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
         .background(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

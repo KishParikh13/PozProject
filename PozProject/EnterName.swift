@@ -1,13 +1,4 @@
-//
-//  OnboardTwo.swift
-//  PozProject
-//
-//  Created by Kish Parikh on 2/4/21.
-//
-
 import SwiftUI
-
-
 
 struct EnterName: View {
     @State public var username: String = ""
@@ -15,23 +6,21 @@ struct EnterName: View {
     
     var body: some View {
         VStack {
+            
+            //testing custom back button
 //            NavigationLink(destination: Home()) {
 //                    Text("Back")
 //                        .font(Font.custom("Poppins-Regular", size: 14))
 //                        .padding(.horizontal, 20)
 //            }
 //            .background(Color(#colorLiteral(red: 0.9853331447, green: 0.7925021052, blue: 0.3908675313, alpha: 1)))
-//                //Spacer()
 //            .padding(.top, 60)
 //            .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)))
             
-            //welcome text
+            //heading text
             EnterName_Text()
             
-            //images
-//            Images()
-//            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            
+            // text field
             TextField( "User name (email address)", text: $username)
                 .autocapitalization(.none)
                 .disableAutocorrection(true)
@@ -42,6 +31,7 @@ struct EnterName: View {
                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                 .multilineTextAlignment(.center)
             
+            // nav button to next screen
             NavigationLink(destination: BreatheOne()) {
                     Text("Next")
                         .font(Font.custom("Poppins-Regular", size: 20))
@@ -62,6 +52,7 @@ struct EnterName: View {
     }
 }
 
+// heading text
 struct EnterName_Text: View {
     var body: some View {
         Spacer()

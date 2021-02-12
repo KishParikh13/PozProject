@@ -18,10 +18,7 @@ struct EnterThoughts: View {
             //welcome text
             EnterThoughts_Text()
             
-            //images
-//            Images()
-//            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            
+            //text field
             TextField( "Type your thoughts here...", text: $thoughts)
                 .autocapitalization(.none)
                 .disableAutocorrection(true)
@@ -32,6 +29,7 @@ struct EnterThoughts: View {
                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                 .multilineTextAlignment(.center)
 
+            // nav button to next screen
             NavigationLink(destination: MessageToSelf()) {
                     Text("Next")
                         .font(Font.custom("Poppins-Regular", size: 20))
@@ -51,6 +49,7 @@ struct EnterThoughts: View {
     }
 }
 
+// heading text
 struct EnterThoughts_Text: View {
     var body: some View {
         Spacer()

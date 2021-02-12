@@ -9,7 +9,8 @@ import SwiftUI
 
 struct RateMood: View {
     @State private var speed = 50.0
-//
+    
+    //vars from earlier implementation of picker
 //    enum Flavor: String, CaseIterable, Identifiable {
 //        case chocolate
 //        case vanilla
@@ -24,11 +25,12 @@ struct RateMood: View {
     var body: some View {
         //OnboardThree
         
-            VStack {
-
+        VStack {
+            
             RateMood_Text()
-
-          //  ZStack {
+            
+            //earlier implementation of picker
+            //  ZStack {
 //                //emoji Picker
 //                Picker(selection: .constant(5), label: /*@START_MENU_TOKEN@*/Text("Picker")/*@END_MENU_TOKEN@*/) {
 //                    ForEach((0...10), id: \.self) {
@@ -51,56 +53,57 @@ struct RateMood: View {
 //
                 
             //emoji Picker
-                ZStack {
-                    ZStack  {
-                        if speed >= 90.0 {
-                            Text("🤩")
-                        } else if speed >= 80.0 && speed < 90.0 {
-                            Text("😊")
-                        }
-                        else if speed >= 70.0 && speed < 80.0 {
-                            Text("🙂")
-                        }
-                        else if speed >= 60.0 && speed < 70.0 {
-                            Text("😬")
-                        } else if speed >= 50.0 && speed < 60.0 {
-                            Text("😐")
-                        }
-                        else if speed >= 40.0 && speed < 50.0 {
-                            Text("😑")
-                        }
-                        else if speed >= 30.0 && speed < 40.0 {
-                            Text("😒")
-                        } else if speed >= 20.0 && speed < 30.0 {
-                            Text("😓")
-                        }
-                        else if speed >= 10.0 && speed < 20.0 {
-                            Text("😖")
-                        }
-                        else if speed <= 10.0 {
-                            Text("💩")
-                        }
+            ZStack {
+                ZStack  {
+                    if speed >= 90.0 {
+                        Text("🤩")
+                    } else if speed >= 80.0 && speed < 90.0 {
+                        Text("😊")
                     }
-                    .font(Font.custom("Blueberry Regular", size: 200))
-                    .offset(x: 0, y: 0)
-                    .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .global)
-                        .onChanged { value in
-                            let verticalAmount = value.translation.height as CGFloat
-                            
-                                speed -= (Double(verticalAmount))/100
-                        })
-
-                    Slider(
-                        value: $speed,
-                        in: 0...100
-                    )
-                    .rotationEffect(.degrees(-90))
-                    .accentColor(Color(#colorLiteral(red: 0.8941222429, green: 0.8940448165, blue: 0.9026284814, alpha: 1)))
-                    .offset(x: 150, y: 0)
+                    else if speed >= 70.0 && speed < 80.0 {
+                        Text("🙂")
+                    }
+                    else if speed >= 60.0 && speed < 70.0 {
+                        Text("😬")
+                    } else if speed >= 50.0 && speed < 60.0 {
+                        Text("😐")
+                    }
+                    else if speed >= 40.0 && speed < 50.0 {
+                        Text("😑")
+                    }
+                    else if speed >= 30.0 && speed < 40.0 {
+                        Text("😒")
+                    } else if speed >= 20.0 && speed < 30.0 {
+                        Text("😓")
+                    }
+                    else if speed >= 10.0 && speed < 20.0 {
+                        Text("😖")
+                    }
+                    else if speed <= 10.0 {
+                        Text("💩")
+                    }
                 }
+                .font(Font.custom("Blueberry Regular", size: 200))
+                .offset(x: 0, y: 0)
+                .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .global)
+                    .onChanged { value in
+                        let verticalAmount = value.translation.height as CGFloat
+                        
+                            speed -= (Double(verticalAmount))/100
+                    })
+
+                Slider(
+                    value: $speed,
+                    in: 0...100
+                )
+                .rotationEffect(.degrees(-90))
+                .accentColor(Color(#colorLiteral(red: 0.8941222429, green: 0.8940448165, blue: 0.9026284814, alpha: 1)))
+                .offset(x: 150, y: 0)
+            }
                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-                
-                NavigationLink(destination: EnterThoughts()) {
+            
+            // nav button to next screen
+            NavigationLink(destination: EnterThoughts()) {
                         Text("Next")
                             .font(Font.custom("Poppins-Regular", size: 20))
                             .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
@@ -111,12 +114,12 @@ struct RateMood: View {
                             .padding(.bottom, 60)
                 }
                 
-            }
-            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-            .background(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-            .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-            .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
         }
+        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+        .background(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+        .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+        .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
+    }
 }
 
 struct RateMood_Previews: PreviewProvider {
@@ -125,6 +128,7 @@ struct RateMood_Previews: PreviewProvider {
     }
 }
 
+//heading text
 struct RateMood_Text: View {
     var body: some View {
         Spacer()

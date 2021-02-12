@@ -1,15 +1,9 @@
-//
-//  LottieView.swift
-//  PozProject
-//
-//  Created by Kish Parikh on 2/9/21.
-//
-//lottie file graciosuly taken from https://lottiefiles.com/18409-breathe#
-
-
-
 import SwiftUI
 import Lottie
+
+//lottie file graciosuly taken from https://lottiefiles.com/47367-breath-in-breath-out-animation
+
+//implementation taken from https://stackoverflow.com/questions/62584516/swiftui-how-to-make-lottie-animation-loop and https://medium.com/@simibac93/swiftui-with-lottie-33b0841f8ab0
 
 struct LottieView: UIViewRepresentable {
     typealias UIViewType = UIView
@@ -36,10 +30,5 @@ struct LottieView: UIViewRepresentable {
     }
       
     func updateUIView(_ uiView: UIView, context: UIViewRepresentableContext<LottieView>) { }
-  }
+}
 
-//struct LottieView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        LottieView(filename: "breathe")
-//    }
-//}

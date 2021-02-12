@@ -19,9 +19,15 @@ struct ContentView: View {
              //     EnterThoughts()
              //     MessageToSelf()
             }
-            
+     
+//next steps:
     // add some kind of message/prescription at the end of the flow
-    // face scan  emotion
+    // face scan for emotions?
+    //dashboard
+            //summary of previous input
+            //daily reprot
+    //connect to therapist feature
+    // fix/remove poop emoji
             
         }
     }
