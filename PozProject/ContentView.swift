@@ -14,19 +14,15 @@ struct ContentView: View {
         VStack {
             
             if self.index == 0 {
-                
                 RateMood()
-                
             }
             
             if self.index == 1 {
-                
                 Home()
             }
             
             if self.index == 2 {
-                BreatheOne()
-                
+                Dashboard()
             }
             Spacer()
             bottomTabs(index: self.$index)
@@ -67,7 +63,7 @@ struct bottomTabs: View {
                     }
                     .opacity((self.index == 0 ? 1 : 0.3))
                     .padding(.leading, 60)
-                    .padding(.bottom, 30)
+                    .padding(.bottom, 10)
                 }
 
                 Spacer(minLength: 0)
@@ -95,7 +91,7 @@ struct bottomTabs: View {
                     }
                     .opacity((self.index == 2 ? 1 : 0.3))
                     .padding(.trailing, 60)
-                    .padding(.bottom, 30)
+                    .padding(.bottom, 10)
                 }
             }
             .padding(.top, 0)

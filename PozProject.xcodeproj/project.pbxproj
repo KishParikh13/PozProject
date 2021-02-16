@@ -21,6 +21,7 @@
 		DE5F100225CC9BB5003F7AA8 /* EnterName.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F100125CC9BB5003F7AA8 /* EnterName.swift */; };
 		DE5F100725CC9CC2003F7AA8 /* RateMood.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F100625CC9CC2003F7AA8 /* RateMood.swift */; };
 		DEA39F3F25D6322D00FB34C7 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA39F3E25D6322D00FB34C7 /* Dashboard.swift */; };
+		DEC943BE25DB5C5C002530BE /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = DEC943BD25DB5C5C002530BE /* SwiftUICharts */; };
 		DEDB5DBC25D32C53009F5B0D /* EnterThoughts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDB5DBB25D32C53009F5B0D /* EnterThoughts.swift */; };
 		DEDB5DC125D32D9D009F5B0D /* MessageToSelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDB5DC025D32D9D009F5B0D /* MessageToSelf.swift */; };
 		DEDB5DC625D3B2C6009F5B0D /* BreatheOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDB5DC525D3B2C6009F5B0D /* BreatheOne.swift */; };
@@ -92,6 +93,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEDB5DD125D3B4E8009F5B0D /* Lottie in Frameworks */,
+				DEC943BE25DB5C5C002530BE /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +219,7 @@
 			name = PozProject;
 			packageProductDependencies = (
 				DEDB5DD025D3B4E8009F5B0D /* Lottie */,
+				DEC943BD25DB5C5C002530BE /* SwiftUICharts */,
 			);
 			productName = PozProject;
 			productReference = DE5F0FAB25C9F06B003F7AA8 /* PozProject.app */;
@@ -293,6 +296,7 @@
 			mainGroup = DE5F0FA225C9F06B003F7AA8;
 			packageReferences = (
 				DEDB5DCF25D3B4E8009F5B0D /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				DEC943BC25DB5C5C002530BE /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = DE5F0FAC25C9F06B003F7AA8 /* Products */;
 			projectDirPath = "";
@@ -755,6 +759,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		DEC943BC25DB5C5C002530BE /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.4;
+			};
+		};
 		DEDB5DCF25D3B4E8009F5B0D /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
@@ -766,6 +778,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DEC943BD25DB5C5C002530BE /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEC943BC25DB5C5C002530BE /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
 		DEDB5DD025D3B4E8009F5B0D /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DEDB5DCF25D3B4E8009F5B0D /* XCRemoteSwiftPackageReference "lottie-ios" */;
