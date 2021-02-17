@@ -30,7 +30,7 @@ struct MessageToSelf: View {
                 .multilineTextAlignment(.center)
             
             // nav button to next screen
-            NavigationLink(destination: Home()) {
+            NavigationLink(destination: RateMood()) {
                 Text("Home")
                     .font(Font.custom("Poppins-Regular", size: 20))
                     .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))

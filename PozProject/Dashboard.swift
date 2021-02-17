@@ -11,7 +11,7 @@ struct Dashboard: View {
             appTopBar(index: self.$index, offset: self.$offset)
             
             if (index == 0) {
-                Entries()
+                EntriesListView()
             } else if (index == 1) {
                 Stats()
             }
@@ -80,86 +80,6 @@ struct appTopBar : View {
     }
 }
 
-struct Entries : View {
-    
-    var body : some View {
-        List() {
-            VStack {
-                HStack {
-                    Text("😖")
-                        .font(Font.custom("Blueberry Regular", size: 50))
-                    Spacer()
-                    Text("2/12/21")
-                        .font(Font.custom("Poppins", size: 24))
-                        .padding(.bottom, 10)
-                }
-                .padding(.bottom, -20)
-                Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
-                    .font(Font.custom("Poppins", size: 18))
-                HStack {
-                    Image("voiceMemo").resizable()
-                        .frame(width: 300, height: 45, alignment: .center)
-                        .colorInvert()
-                    Image("play").resizable()
-                        .frame(width: 45, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        .colorInvert()
-                        .background(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
-                        .cornerRadius(100)
-                }
-            }
-            .padding(.bottom, 20)
-            VStack {
-                HStack {
-                    Text("😒")
-                        .font(Font.custom("Blueberry Regular", size: 50))
-                    Spacer()
-                    Text("2/11/21")
-                        .font(Font.custom("Poppins", size: 24))
-                        .padding(.bottom, 10)
-                }
-                .padding(.bottom, -20)
-                Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
-                    .font(Font.custom("Poppins", size: 18))
-                HStack {
-                    Image("voiceMemo").resizable()
-                        .frame(width: 300, height: 45, alignment: .center)
-                        .colorInvert()
-                    Image("play").resizable()
-                        .frame(width: 45, height: 45, alignment: .center)
-                        .colorInvert()
-                        .background(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
-                        .cornerRadius(100)
-                }
-            }
-            .padding(.bottom, 20)
-            VStack {
-                HStack {
-                    Text("😬")
-                        .font(Font.custom("Blueberry Regular", size: 50))
-                    Spacer()
-                    Text("2/10/21")
-                        .font(Font.custom("Poppins", size: 24))
-                        .padding(.bottom, 10)
-                }
-                .padding(.bottom, -20)
-                Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
-                    .font(Font.custom("Poppins", size: 18))
-                HStack {
-                    Image("voiceMemo").resizable()
-                        .frame(width: 300, height: 45, alignment: .center)
-                        .colorInvert()
-                    Image("play").resizable()
-                        .frame(width: 45, height: 45, alignment: .center)
-                        .colorInvert()
-                        .background(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
-                        .cornerRadius(100)
-                }
-            }
-            .padding(.bottom, 20)
-        }
-    }
-}
-
 struct Stats : View {
     var body: some View {
         VStack (spacing: 20){
@@ -169,7 +89,9 @@ struct Stats : View {
                 
             }
             LineChartView(data: [8,23,54,32,12,37,7,23,43], title: "Usage", form: ChartForm.large) // legend is optional
+            Spacer()
         }
+        .padding(.top, 20)
         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity)
     }
 }
