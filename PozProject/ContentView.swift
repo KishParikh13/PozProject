@@ -1,14 +1,15 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var index = 3
+    @State var index = 0
+    @State private var isWelcomeScreensShowing = true;
+    @State private var isEnterNameScreenShowing = true;
     
     var body: some View {
         VStack {
-            NavigationView() {
-                if self.index == 3 {
+            if (isWelcomeScreensShowing == true) {
                     Onboarding()
-                    Button(action: {self.index = 1}) {
+                    Button(action: {isWelcomeScreensShowing = false}) {
                         Text("Get Started")
                             .font(Font.custom("Poppins-Regular", size: 20))
                             .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
@@ -18,33 +19,43 @@ struct ContentView: View {
                             .padding(.horizontal, 20)
                             .padding(.bottom, 60)
                     }
-                }
                 
-                if self.index == 0 {
-                    RateMood()
-                }
-                
-                if self.index == 1 {
-                    RateMood()
-                }
-                
-                if self.index == 2 {
-                    Dashboard()
-                }
-                
-                if self.index != 3 {
+            } else {
+                if (isEnterNameScreenShowing == true) {
+                    EnterName()
+                    Button(action: {isEnterNameScreenShowing = false}) {
+                            Text("Next")
+                                .font(Font.custom("Poppins-Regular", size: 20))
+                                .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
+                                .frame(width: 200, height: 50)
+                                .background(Color(#colorLiteral(red: 0.9853331447, green: 0.7925021052, blue: 0.3908675313, alpha: 1)))
+                                .cornerRadius(50)
+                                .padding(.horizontal, 20)
+                                .padding(.bottom, 60)
+                    }
+                    
+                } else {
+                    if (self.index == 0) {
+                        Home()
+                    }
+                    
+                    if (self.index == 1) {
+                        RateMood()
+                    }
+                    
+                    if (self.index == 2) {
+                        Dashboard()
+                    }
+                    
                     //Spacer()
                     bottomTabs(index: self.$index)
                 }
             }
-            
         }
         .ignoresSafeArea(edges: /*@START_MENU_TOKEN@*/.bottom/*@END_MENU_TOKEN@*/)
-        
-
     }
 }
-
+//  (action: {isWelcomeScreensShowing = false})
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
@@ -76,7 +87,7 @@ struct bottomTabs: View {
                     Button(action: {self.index = 1}) {
                         ZStack {
                             Circle()
-                                .frame(width: 100, height: 100)
+                                .frame(width: 95, height: 95)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             Circle()
                                 .frame(width: 80, height: 80)

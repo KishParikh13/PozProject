@@ -30,6 +30,7 @@
 		DE9F287E25DC50DD00D81A70 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE9F287C25DC50DD00D81A70 /* GoogleService-Info.plist */; };
 		DE9F287F25DC50DD00D81A70 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE9F287C25DC50DD00D81A70 /* GoogleService-Info.plist */; };
 		DEA39F3F25D6322D00FB34C7 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA39F3E25D6322D00FB34C7 /* Dashboard.swift */; };
+		DEA3E6A025DFB2FA0006A1BA /* LogSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA3E69F25DFB2FA0006A1BA /* LogSignIn.swift */; };
 		DEC943BE25DB5C5C002530BE /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = DEC943BD25DB5C5C002530BE /* SwiftUICharts */; };
 		DEC943C325DBAFE0002530BE /* EntriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC943C225DBAFE0002530BE /* EntriesListView.swift */; };
 		DEDB5DBC25D32C53009F5B0D /* EnterThoughts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDB5DBB25D32C53009F5B0D /* EnterThoughts.swift */; };
@@ -95,6 +96,7 @@
 		DE90F08525DD72BA008D7239 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		DE9F287C25DC50DD00D81A70 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DEA39F3E25D6322D00FB34C7 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
+		DEA3E69F25DFB2FA0006A1BA /* LogSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogSignIn.swift; sourceTree = "<group>"; };
 		DEC943C225DBAFE0002530BE /* EntriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesListView.swift; sourceTree = "<group>"; };
 		DEDB5DBB25D32C53009F5B0D /* EnterThoughts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterThoughts.swift; sourceTree = "<group>"; };
 		DEDB5DC025D32D9D009F5B0D /* MessageToSelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageToSelf.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				DE90F08525DD72BA008D7239 /* Onboarding.swift */,
 				DEA39F3E25D6322D00FB34C7 /* Dashboard.swift */,
 				DE5F0FE125C9F0BA003F7AA8 /* Home.swift */,
+				DEA3E69F25DFB2FA0006A1BA /* LogSignIn.swift */,
 				DEC943C225DBAFE0002530BE /* EntriesListView.swift */,
 				DE69245525DC7E0100A6CB08 /* Entry.swift */,
 				DE69244D25DC7CA900A6CB08 /* EntriesViewModel.swift */,
@@ -502,6 +505,7 @@
 				DE69244E25DC7CA900A6CB08 /* EntriesViewModel.swift in Sources */,
 				DE5F100225CC9BB5003F7AA8 /* EnterName.swift in Sources */,
 				DEA39F3F25D6322D00FB34C7 /* Dashboard.swift in Sources */,
+				DEA3E6A025DFB2FA0006A1BA /* LogSignIn.swift in Sources */,
 				DE5F0FAF25C9F06B003F7AA8 /* AppDelegate.swift in Sources */,
 				DEDB5DC625D3B2C6009F5B0D /* BreatheOne.swift in Sources */,
 				DE5F0FB125C9F06B003F7AA8 /* SceneDelegate.swift in Sources */,

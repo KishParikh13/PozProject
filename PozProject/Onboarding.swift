@@ -58,7 +58,7 @@ struct Welcome_Text: View {
         Text("Welcome to Poz")
             .font(Font.custom("Blueberry Regular", size: 48))
             .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
-             .padding(.top, 60)
+            .padding(.top, 80)
             .padding(.bottom, 2)
         Text("Take a moment for yourself")
             .font(Font.custom("Poppins-Regular", size: 20))
