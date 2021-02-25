@@ -2,7 +2,11 @@ import SwiftUI
 
 struct Home: View {
     var body: some View {
+        
+        //content container
         VStack (spacing: 20){
+            
+            //quote of the day
             ZStack {
                 Rectangle()
                     .cornerRadius(30)
@@ -24,6 +28,8 @@ struct Home: View {
                     .padding(.bottom, -30)
                     .offset(x: 100, y: 60)
             }
+            
+            //pozes completed
             ZStack {
                 Rectangle()
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 0.5905995735, blue: 0.3327291904, alpha: 1)))
@@ -40,7 +46,10 @@ struct Home: View {
                         .frame(width: 50, height: 50)
                 }
             }
+            
+            //breathing buttons
             HStack {
+                //circle breathing
                 ZStack {
                     Circle()
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 0.6238786347, blue: 0.8998633145, alpha: 1)))
@@ -52,6 +61,7 @@ struct Home: View {
                             .multilineTextAlignment(.center)
                     }
                 }
+                //box breathing
                 ZStack {
                     Rectangle()
                         .cornerRadius(20)

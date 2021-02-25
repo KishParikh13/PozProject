@@ -24,6 +24,7 @@ struct LogSignIn_Previews: PreviewProvider {
     }
 }
 
+//component to choose sign in vs sign up
 struct chooseActionMenu : View {
     
     @Binding var index : Int
@@ -84,6 +85,7 @@ struct chooseActionMenu : View {
     }
 }
 
+//signup component
 struct SignUp: View {
     @State private var username: String = ""
     @State private var password: String = ""
@@ -152,6 +154,7 @@ struct SignUp: View {
     }
 }
 
+//signin component
 struct SignIn: View {
     @State private var username: String = ""
     @State private var password: String = ""
@@ -220,6 +223,7 @@ struct SignIn: View {
     }
 }
 
+//login component
 struct LogIn : View {
     @State private var username: String = ""
     @State private var password: String = ""
