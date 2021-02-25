@@ -27,7 +27,7 @@ struct Home: View {
             ZStack {
                 Rectangle()
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 0.5905995735, blue: 0.3327291904, alpha: 1)))
-                    .cornerRadius(100)
+                    .cornerRadius(20)
                     .frame(width: 370, height: 200)
                     .padding(.horizontal, 20)
                 VStack {
@@ -54,7 +54,7 @@ struct Home: View {
                 }
                 ZStack {
                     Rectangle()
-                        .cornerRadius(15)
+                        .cornerRadius(20)
                         .foregroundColor(Color(#colorLiteral(red: 0.1757411827, green: 0.7647245238, blue: 0.8998633145, alpha: 1)))
                         .frame(width:200, height: 150)
                     VStack {

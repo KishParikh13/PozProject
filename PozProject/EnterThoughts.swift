@@ -49,6 +49,12 @@ struct EnterThoughts: View {
     }
 }
 
+struct EnterThoughts_Previews: PreviewProvider {
+    static var previews: some View {
+        EnterThoughts()
+    }
+}
+
 // heading text
 struct EnterThoughts_Text: View {
     var body: some View {
