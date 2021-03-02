@@ -82,22 +82,6 @@ struct bottomTabs: View {
                         .padding(.bottom, 10)
                     }
 
-                    Spacer(minLength: 0)
-
-                    Button(action: {self.index = 1}) {
-                        ZStack {
-                            Circle()
-                                .frame(width: 95, height: 95)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            Circle()
-                                .frame(width: 80, height: 80)
-                                .foregroundColor(Color(#colorLiteral(red: 0.9853331447, green: 0.7925021052, blue: 0.3908675313, alpha: 1)))
-                            Image("poz").resizable()
-                                .frame(width: 30, height: 30)
-                        }
-                        .offset(y: -50)
-                    }
-
                     Spacer(minLength: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/)
 
                     Button(action: {self.index = 2}) {
@@ -110,9 +94,10 @@ struct bottomTabs: View {
                         .padding(.bottom, 10)
                     }
                 }
-                .padding(.top, 0)
+                .padding(.horizontal, 20)
+                .padding(.top, 20)
+                .padding(.bottom, 20)
                 .background(Color(#colorLiteral(red: 0.9552872777, green: 0.9552872777, blue: 0.9552872777, alpha: 1)))
-                //.clipShape(CBar())
             }
         }
     }
